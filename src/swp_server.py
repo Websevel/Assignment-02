@@ -5,7 +5,7 @@ import os
 HOST = '127.0.0.1'
 PORT = 8080 # [cite: 70]
 PROTOCOL = 'SWP/1.0' # [cite: 115]
-WWW_DIR = 'www'
+WWW_DIR = os.path.join(os.path.dirname(__file__), "www")
 CRLF = '\r\n' # [cite: 120]
 
 def start_server():
